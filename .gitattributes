@@ -1,0 +1,10 @@
+# Garde toujours les fins de ligne Unix (LF) pour tous les fichiers
+# C'est crucial pour Docker qui tourne en Linux
+* text=auto eol=lf
+
+# Fichiers binaires : Git ne doit pas y toucher
+*.parquet binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary

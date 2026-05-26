@@ -1,0 +1,61 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+
+# ============================================
+# PyCharm
+# ============================================
+.idea/
+*.iml
+
+# ============================================
+# Données du Datalake (volumineuses, on ne push pas)
+# ============================================
+tmp/data/raw/sneakers/api_sneakers/*
+tmp/data/raw/sneakers/google_trends/*
+tmp/data/formatted/sneakers/api_sneakers/*
+tmp/data/formatted/sneakers/google_trends/*
+tmp/data/usage/sneakers_hype/*
+
+# Mais on garde les .gitkeep pour préserver la structure
+!tmp/data/raw/sneakers/api_sneakers/.gitkeep
+!tmp/data/raw/sneakers/google_trends/.gitkeep
+!tmp/data/formatted/sneakers/api_sneakers/.gitkeep
+!tmp/data/formatted/sneakers/google_trends/.gitkeep
+!tmp/data/usage/sneakers_hype/.gitkeep
+
+# ============================================
+# Airflow
+# ============================================
+logs/
+airflow.cfg
+airflow.db
+webserver_config.py
+standalone_admin_password.txt
+
+# ============================================
+# Docker
+# ============================================
+postgres-data/
+es-data/
+
+# ============================================
+# Secrets (CRITIQUE !)
+# ============================================
+.env
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
