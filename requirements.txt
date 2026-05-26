@@ -1,5 +1,6 @@
 # === API & HTTP ===
 requests==2.32.3
+urllib3==1.26.18
 
 # === Google Trends ===
 pytrends==4.9.2
